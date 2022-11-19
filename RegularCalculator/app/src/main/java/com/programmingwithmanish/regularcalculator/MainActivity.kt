@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun onClear() {
+    fun onClear(view: View) {
         tvInput?.text = ""
         isDotAdded = false
         isLastDigit = false
