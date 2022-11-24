@@ -2,8 +2,8 @@ package com.programmingwithmanish.quizapp
 
 object Constants {
     const val USER_NAME: String = "user_name"
-    const val TOTAL_QUESTIONS: Int = "total_questions"
-    const val CORRECT_ANSWERS: Int = "correct_answers"
+    const val TOTAL_QUESTIONS: String = "total_questions"
+    const val CORRECT_ANSWERS: String = "correct_answers"
 
     fun getQuestions(): ArrayList<QuizQuestion> {
         val questions = ArrayList<QuizQuestion>()
@@ -29,38 +29,6 @@ object Constants {
             3)
 
         questions.add(q2)
-
-        val q3 = QuizQuestion(
-            1,
-            "What is the current month",
-            "Jan",
-            "Feb",
-            "Nov",
-            "Dec",
-            3)
-
-        questions.add(q3)
-        val q4 = QuizQuestion(
-            1,
-            "What is the current month",
-            "Jan",
-            "Feb",
-            "Nov",
-            "Dec",
-            3)
-
-        questions.add(q4)
-
-        val q5 = QuizQuestion(
-            1,
-            "What is the current month",
-            "Jan",
-            "Feb",
-            "Nov",
-            "Dec",
-            3)
-
-        questions.add(q5)
 
         return questions
     }

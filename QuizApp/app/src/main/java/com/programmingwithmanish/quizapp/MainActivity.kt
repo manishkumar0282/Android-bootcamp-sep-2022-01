@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                 // move to question activity
                 // intent
                 val intent = Intent(this, QuestionActivity::class.java)
-                intent.putExtra(Constants.USER_NAME, tvName.text)
+                intent.putExtra(Constants.USER_NAME, tvName.text.toString())
                 startActivity(intent)
             }
         }

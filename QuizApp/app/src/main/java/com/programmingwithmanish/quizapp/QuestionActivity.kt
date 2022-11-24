@@ -86,8 +86,8 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
                             btnSubmit?.text = "Show Result"
                             val intent = Intent(this, ResultView::class.java)
                             intent.putExtra(Constants.USER_NAME, mUserName)
-                            intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestions!!.size)
-                            intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
+                            intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestions!!.size.toString())
+                            intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers.toString())
                             startActivity(intent)
                         }
                     }
