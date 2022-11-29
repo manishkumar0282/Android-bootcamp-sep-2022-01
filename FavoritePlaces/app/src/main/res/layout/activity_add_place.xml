@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddPlace"
+    tools:context=".activity.AddPlace"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:layout_margin="16dp"
     android:background="@drawable/img_bg"
     >
 
@@ -62,7 +61,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="e.g Address"
-                        android:id="@+id/tv_name"
+                        android:id="@+id/tv_address"
                         android:inputType="textCapWords"
                         android:textColor="#829460"
                         android:textColorHint="#9F73AB">

@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/kumarmanis/Learn/Android_Studio/android-bootcamp-sep-15-2022/FavoritePlaces/app/src/main/res/layout/activity_add_place.xml" value="0.25" />
+        <entry key="..\:/Users/kumarmanis/Learn/Android_Studio/android-bootcamp-sep-15-2022/FavoritePlaces/app/src/main/res/layout/activity_add_place.xml" value="0.1" />
         <entry key="..\:/Users/kumarmanis/Learn/Android_Studio/android-bootcamp-sep-15-2022/FavoritePlaces/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/kumarmanis/Learn/Android_Studio/android-bootcamp-sep-15-2022/FavoritePlaces/app/src/main/res/layout/item_fav_place.xml" value="0.4466666666666667" />
       </map>
     </option>
   </component>
