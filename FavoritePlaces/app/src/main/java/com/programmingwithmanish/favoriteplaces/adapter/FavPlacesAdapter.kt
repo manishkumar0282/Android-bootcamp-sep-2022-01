@@ -6,17 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.programmingwithmanish.favoriteplaces.R
+import com.programmingwithmanish.favoriteplaces.activity.CellClickListener
 import com.programmingwithmanish.favoriteplaces.model.FavPlaceModel
 import kotlinx.android.synthetic.main.item_fav_place.view.*
 
 open class FavPlacesAdapter(
     private val context: Context,
-    private var list: ArrayList<FavPlaceModel>
+    private var list: ArrayList<FavPlaceModel>,
+    private val cellClickListener: CellClickListener
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     private var onClickListener: View.OnClickListener? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return MyViewHolder(LayoutInflater.from(context).inflate(
+        return MyViewHolder (LayoutInflater.from(context).inflate(
             R.layout.item_fav_place, parent, false
         ))
     }
@@ -27,6 +29,10 @@ open class FavPlacesAdapter(
 
             holder.itemView.tvTitle.text = model.title;
             holder.itemView.tvAddress.text = model.address;
+
+            holder.itemView.setOnClickListener{
+                cellClickListener.onClick(model)
+            }
         }
     }
 
